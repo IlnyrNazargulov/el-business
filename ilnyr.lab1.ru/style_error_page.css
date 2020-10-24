@@ -1,0 +1,24 @@
+p {
+  color: rgb(249, 252, 253);
+  font-size: 30px;
+  text-align: center;
+  font-family: fantasy;
+}
+.error_panel {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 500px;
+  border-radius: 30px;
+  background-color: rgb(190, 169, 197);
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+body {
+  background-color: skyblue;
+}
+
+.error_panel a p:hover {
+  color: #53ea93;
+}

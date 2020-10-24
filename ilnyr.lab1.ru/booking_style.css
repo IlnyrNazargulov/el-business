@@ -1,0 +1,16 @@
+.defaultElement {
+  margin: 10px;
+}
+.defaultElement img {
+  display: table;
+  height: auto;
+  object-fit: contain;
+  max-width: 400px;
+  background: #162772;
+  border-radius: 5px;
+  padding: 2%;
+}
+body {
+  background-color: skyblue;
+  font-size: 15pt;
+}

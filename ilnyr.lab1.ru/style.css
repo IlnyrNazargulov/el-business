@@ -1,0 +1,26 @@
+button {
+  color: rgb(24, 22, 133);
+  background-color: rgb(150, 127, 236);
+  font-size: 20pt;
+  width: 300px;
+  height: 100px;
+  border: 0pt;
+  border-width: 4px;
+  border-color: teal;
+  border-radius: 5px;
+}
+.defaultElement {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-basis: 100px;
+}
+fieldset {
+  border-radius: 5px;
+  border-color: rgb(33, 61, 182);
+}
+body {
+  background-color: skyblue;
+  font-size: 15pt;
+}

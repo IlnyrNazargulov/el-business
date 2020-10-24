@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Лабораторная работа №1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <form name="form" id="form" method="POST" action="script.php">
+        <h2>Бронирование мест в гостинице</h2>
+        <div class="defaultElement">
+            <fieldset>
+                <legend>Данные пользователя</legend>
+                <pre style="text-decoration: unset">ФИО</pre>
+                <input type="text" maxlength="30" placeholder="Иванов Иван Иванович" name="fullName" autofocus
+                    required />
+                <pre style="text-decoration: unset">Email</pre>
+                <input placeholder="+8-981-776-26-87" type="text" name="email" required />
+            </fieldset>
+            <fieldset>
+                <legend>Банковская карта</legend>
+                <pre style="text-decoration: unset">Номер банковской карты</pre>
+                <input type="text" maxlength="25" placeholder="0000 0000 0000 0000" size="25" name="cardNumber"
+                    required />
+                <pre style="text-decoration: unset">CVC</pre>
+                <input size="3" type="text" name="cvc" size="3" required />
+            </fieldset>
+            <fieldset>
+                <legend>Критерии гостиницы</legend>
+                <select name="hotel">
+                    <option value="hotel1">Antusa Design Hotel & Spa</option>
+                    <option value="hotel2">Boss Hotel Sultanahmet</option>
+                    <option value="hotel3">Apple Tree Hotel</option>
+                    <option value="hotel4">Glamour Hotel Istanbul Sirkeci</option>
+                    <option value="hotel5">Dosso Dossi Hotels & Spa Downtown</option>
+                </select>
+            </fieldset>
+        </div>
+        <div class="defaultElement">
+            <fieldset>
+                <legend>Количество звезд</legend>
+                <input type="radio" name="stars" value="1" id="defaultElement" required />
+                <label for="defaultElement">1*</label>
+                <input type="radio" name="stars" value="2" id="two" />
+                <label for="two">2*</label>
+                <input type="radio" name="stars" value="3" id="three" />
+                <label for="three">3*</label>
+                <input type="radio" name="stars" value="4" id="four" />
+                <label for="four">4*</label>
+                <input type="radio" name="stars" value="5" id="five" />
+                <label for="five">5*</label>
+            </fieldset>
+        </div>
+        <div class="defaultElement">
+            <fieldset>
+                <legend>Количество ночей (1-31)</legend>
+                <p>
+                    <input type="number" id="dayNumber" name="nightNumber" min="1" max="31" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Дополнительные услуги</legend>
+                <p>
+                    <input type="checkbox" name="additions[]" value="add1" id="add1" />
+                    <label for="add1">СПА процедуры</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="additions[]" value="add2" id="add2" />
+                    <label for="add2">Завтрак</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="additions[]" value="add3" id="add3" />
+                    <label for="add3">Обед</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="additions[]" value="add4" id="add4" />
+                    <label for="add4">Ужин</label>
+                </p>
+            </fieldset>
+        </div>
+
+        <div class="defaultElement">
+            <button name="send" form="form" value="toBook" formtarget="self">
+                Забронировать
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>
