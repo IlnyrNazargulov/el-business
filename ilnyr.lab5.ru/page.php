@@ -74,7 +74,7 @@ echo "<h2 class='formHeader'>Здравсвуйте " . $_COOKIE['nickName'] . "
         <p class="formField">ФИО:
             <?php echo $_SESSION['secondName'] . ' ' . $_SESSION['firstName'] . ' ' . $_SESSION['patronymic']; ?>
         </p>
-        <p class="formField">Номер телефона:<?php echo $_SESSION['phone']; ?> </p>
+        <p class="formField">Номер телефона: <?php echo $_SESSION['phone']; ?> </p>
         <form class="formField" action="booking.php" method="GET">
             <input type="submit" name="booking" value="Создать заявку на бронирование">
         </form>

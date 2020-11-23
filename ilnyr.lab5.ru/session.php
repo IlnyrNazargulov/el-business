@@ -66,7 +66,7 @@ exit;
 <html>
 
 <head>
-    <title>Успешный вход</title>
+    <title>Успешный ввод</title>
     <link rel="stylesheet" href="style.css">
     <style>
     body {
@@ -82,7 +82,7 @@ exit;
 echo "<h2 class='formHeader'>Здравсвуйте " . $_COOKIE['nickName'] . "</h2>";
 ?>
         <p class="formField">Данные записаны в сессионный массив</p>
-        <a class="formField" href="/page.php">Перейти на страницу с бронированием</a>
+        <a class="formField" href="/page.php">Перейти на страницу с данными</a>
         <br>
         <a class="formField" href='/index.php'>Вернуться на главную</a>
     </div>
